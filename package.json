@@ -8,7 +8,7 @@
     "start": "node server.js"
   },
   "repository": {
-    "type": "module",
+    "type": "git",
     "url": "git+https://github.com/adriennecordell/employee-tracker.git"
   },
   "keywords": [],
