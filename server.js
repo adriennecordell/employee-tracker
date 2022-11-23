@@ -1,16 +1,17 @@
 const mysql = require('mysql2');
 const inquirer = require('inquirer');
 
-const db = mysql.createConnection(
-    {
-      host: 'localhost',
-      user: 'root',
-      password: 'rootroot',
-      database: 'employee_db'
-    }
-  );
+    const db = mysql.createConnection(
+        {
+            host: 'localhost',
+            user: 'root',
+            password: 'rootroot',
+            database: 'employee_db'
+        }
+    );
 
-const question = [{
+const question = 
+[{
     type: 'list',
     name: 'choice',
     Message:'Where would you like to go?',
@@ -58,7 +59,6 @@ function verify() {
 }
 function viewDepartments() {
     const sql = `SELECT department_id AS ID, department_name AS Department FROM department`;
-
         db.query(sql, (err, data) => {
         if (err) throw err;
         console.table(data);
@@ -70,7 +70,6 @@ function viewRoles() {
     FROM roles
     JOIN department ON roles.department_id = department.department_id 
     ORDER BY roles.role_id ASC`
-
         db.query(sql, (err, data) => {
         if (err) throw err;
         console.table(data);
@@ -84,7 +83,6 @@ function viewEmployees() {
     FROM employee e
     LEFT JOIN roles r ON r.role_id = e.role_id 
     LEFT JOIN department d ON d.department_id = r.department_id`
-
         db.query(sql, (err, data) => {
         if (err) throw err;
         console.table(data);
@@ -187,7 +185,7 @@ function addEmployee() {
     })
   })
 }
-function updateRole() {
+function updateRole() { 
   db.query('SELECT * FROM roles', (err, role) => {
     if (err) throw err;
     const roles = role.map(role => ({ name: role.title, value: role.role_id }));
