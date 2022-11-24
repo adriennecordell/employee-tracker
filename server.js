@@ -150,7 +150,7 @@ function addEmployee() {
   db.query('SELECT * FROM roles', (err, role) => {
     if (err) throw err;
     const roles = role.map(role => role.title);
-    db.query('SELECT first_name, last_name FROM employee', (err, employee) => {
+    db.query('SELECT first_name, last_name FROM employee', (err, data) => {
       if (err) throw err;
 
       inquirer
