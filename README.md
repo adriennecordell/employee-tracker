@@ -27,9 +27,9 @@ To use, follow the prompts to do various tasks such as, viewing departments, emp
 To exit the CLI you can press 'command C' or press the 'exit' option in the list of actions.
 
 
-![video walkthrough of application] (https://user-images.githubusercontent.com/110563204/203676799-a60c2bf4-f614-4eb7-9e2a-b53245fcdbb3.mov)
-(https://user-images.githubusercontent.com/110563204/203677138-4679f281-7179-48f9-a967-52997ac9d647.mov)
-(https://user-images.githubusercontent.com/110563204/203677162-d060efce-d2b2-4dbd-aaea-42a021dc7ca8.mov)
+![video walkthrough of application](https://user-images.githubusercontent.com/110563204/203676799-a60c2bf4-f614-4eb7-9e2a-b53245fcdbb3.mov)
+![](https://user-images.githubusercontent.com/110563204/203677138-4679f281-7179-48f9-a967-52997ac9d647.mov)
+![](https://user-images.githubusercontent.com/110563204/203677162-d060efce-d2b2-4dbd-aaea-42a021dc7ca8.mov)
 
 
 ## Credits
